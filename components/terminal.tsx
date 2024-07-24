@@ -144,7 +144,7 @@ const Terminal = () => {
 					))}
 				</div>
 			)}
-			<form className='sm:flex' onSubmit={handleSubmit}>
+			<form className=' flex items-end ' onSubmit={handleSubmit}>
 				<label htmlFor='terminal-input'>
 					<TerminalInfo /> <br className=' sm:hidden' />
 					<span className='leading-6 mr-[0.75rem] md:hidden'>&#62;</span>
