@@ -6,10 +6,14 @@ const Education: React.FC = () => {
 			<div className='mb-3'>Here is my education background!</div>
 			{education.map(({ degree, university, year, cgpa }, index) => (
 				<li className='mb-4' key={index}>
-					<p className='title font-bold mb-1'>{degree}</p>
-					<p className='desc'>{year}</p>
-					<p className='desc'>{cgpa}</p>
-					<p className='desc'>{university}</p>
+					<p className='space-x-4'>
+						<span className='title font-bold mb-1 hover:underline underline-offset-4'>{degree}</span>
+						<span className='text-yellow-400'>{cgpa}</span>
+					</p>
+					<p className='space-x-4'>
+						<span>{university}</span>
+						<span className='text-yellow-400'>{year}</span>
+					</p>
 				</li>
 			))}
 		</div>

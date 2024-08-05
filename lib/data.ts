@@ -8,22 +8,20 @@ type Command = {
 
 
 export const commands: Command = [
-
-
     // { cmd: "pwd", desc: "print current working directory", tab: 10 },
     { cmd: "help", desc: "check available commands", tab: 9 },
     { cmd: "welcome", desc: "welcome note", tab: 6 },
     { cmd: "about", desc: "about Rohitansu Pradhan", tab: 8 },
-    { cmd: "clear", desc: "clear the terminal", tab: 8 },
-    { cmd: "echo", desc: "print out anything", tab: 9 },
     { cmd: "education", desc: "my education background", tab: 4 },
     { cmd: "email", desc: "send an email to me", tab: 8 },
-    { cmd: "core-competencies", desc: "about core-competencies section", tab: 8 },
+    // { cmd: "core-competencies", desc: "about core-competencies section", tab: 8 },
     { cmd: "certifications", desc: "certificates", tab: 8 },
     { cmd: "skills", desc: "tech & Non-tech skills", tab: 8 },
-    { cmd: "profile-summary", desc: "summary", tab: 8 },
+    // { cmd: "profile-summary", desc: "summary", tab: 8 },
     { cmd: "work-experience", desc: "about Working experience.", tab: 8 },
     { cmd: "who-am-i", desc: "about current user", tab: 7 },
+    { cmd: "history", desc: "recent history", tab: 8 },
+    { cmd: "clear", desc: "clear the terminal", tab: 8 },
 ];
 
 
@@ -33,14 +31,11 @@ export const about = {
     position: "CYBERSECURITY ANALYST",
     location: "Bangalore",
     puspose: "Technology and result-oriented professional, specializing in Offensive Security within the Cyber Security domain, with a keen interest in leveraging expertise in Network, Web Application, and Mobile Security to contribute effectively to a dynamic organization.",
-    phone: "+91 7855051616",
     email: "pradhanrohitansu@gmail.com",
     emailLink: "mailto:pradhanrohitansu@gmail.com",
     Linkedin: "Linkedin.RohitansuPradhan",
     LinkedinLink: "https://www.linkedin.com/in/rohitansupradhan/"
 }
-
-
 
 export const coreCompetencies = [
     "Cyber Security Excellence ",
@@ -58,8 +53,6 @@ export const coreCompetencies = [
     "Cross - functional Coordination",
 ]
 
-
-
 export const certifications = [
     "Certified Ethical Hacker(V12) - EC Council",
     "Switching, Routing & Wireless Essentials - CCNA",
@@ -72,8 +65,6 @@ export const certifications = [
     "Certified Development Associate - ABAP - SAP",
     "Core Java - Central Tool Room & Training Center",
 ]
-
-
 
 export const education = [
     {
@@ -95,7 +86,6 @@ export const education = [
         cgpa: "82%",
     },
 ]
-
 
 export const technicalSkills = [
     {
@@ -158,20 +148,21 @@ export const workExperience = [
             "Mentorship as CEH and CCNA: Mentored aspiring professionals as a Certified Ethical Hacker(CEH) and Cisco Certified Network Associate(CCNA) Mentor, contributing to their professional growth."
         ]
 
+    },
+    {
+        position: "Cybersecurity Intern",
+        company: "Palo Alto Networks Cybersecurity Academy",
+        duration: "Mar 2022 - May 2022",
+
+        responsibilities: [
+            "Developed a Decentralized Voting System utilizing Ethereum blockchain and smart contracts, showcasing advanced proficiency in blockchain technology.",
+            "Created a proof of concept for the project by applying technical skills in Solidity, JavaScript, HTML, CSS, and utilizing tools like NPM, Truffle, Ganache, and Metamask.",
+            "Researched current cybersecurity trends and emerging threats to enhance the system's security and resilience against potential vulnerabilities.",
+            "Collaborated with team members to develop and implement security policies and procedures for the academy's network and systems, ensuring a secure and functional project outcome."
+        ]
     }
 ]
 
 
-export const internship = {
-    position: "Cybersecurity Intern",
-    company: "Palo Alto Networks Cybersecurity Academy",
-    duration: "Mar 2022 - May 2022",
 
-    responsibilities: [
-        "Developed a Decentralized Voting System utilizing Ethereum blockchain and smart contracts, showcasing advanced proficiency in blockchain technology.",
-        "Created a proof of concept for the project by applying technical skills in Solidity, JavaScript, HTML, CSS, and utilizing tools like NPM, Truffle, Ganache, and Metamask.",
-        "Researched current cybersecurity trends and emerging threats to enhance the system's security and resilience against potential vulnerabilities.",
-        "Collaborated with team members to develop and implement security policies and procedures for the academy's network and systems, ensuring a secure and functional project outcome."
-    ]
-}
 

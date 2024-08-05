@@ -1,4 +1,5 @@
 import About from './commands/about';
+import Certifications from './commands/certifications';
 import Clear from './commands/clear';
 import Echo from './commands/echo';
 import Education from './commands/education';
@@ -9,7 +10,9 @@ import Help from './commands/help';
 import History from './commands/history';
 import Projects from './commands/projects';
 import Socials from './commands/socials';
+import TechnicalSkills from './commands/technical-skills';
 import Welcome from './commands/Welcome';
+import WorkExperience from './commands/work-experience';
 import { termContext } from './terminal';
 import { useContext } from 'react';
 
@@ -44,8 +47,10 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
 					help: <Help />,
 					history: <History />,
 					projects: <Projects />,
-					// pwd: <GeneralOutput>/home/satnaing</GeneralOutput>,
-					socials: <Socials />,
+					skills: <TechnicalSkills />,
+					certifications: <Certifications />,
+					// socials: <Socials />,
+					'work-experience': <WorkExperience />,
 					welcome: <Welcome />,
 					'who-am-i': <GeneralOutput>visitor</GeneralOutput>,
 				}[cmd]
